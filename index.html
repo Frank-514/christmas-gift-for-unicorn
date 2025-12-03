@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>圣诞回忆礼物</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="snow-container" aria-hidden="true">
+    <span class="snowflake">✦</span>
+    <span class="snowflake">✺</span>
+    <span class="snowflake">✶</span>
+    <span class="snowflake">✦</span>
+    <span class="snowflake">✺</span>
+  </div>
+
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <!-- 这里可以修改女朋友的称呼和标题文案 -->
+      <p class="hero__eyebrow">为我最爱的宝宝准备</p>
+      <h1 class="hero__title">宝宝圣诞节快乐 🎄</h1>
+      <p class="hero__subtitle">
+        这是送给你的小小圣诞礼物，也装着我们最闪亮的回忆。
+        <!-- 修改副标题文字，请直接编辑这一行 -->
+      </p>
+
+      <button class="gift-box" id="giftBox" aria-label="打开礼物">
+        <div class="gift-box__lid"></div>
+        <div class="gift-box__body">🎁</div>
+        <div class="gift-box__glow"></div>
+        <span class="gift-box__text">点我拆礼物</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="memories" id="memories">
+      <div class="memories__header">
+        <p class="memories__eyebrow">我们的闪闪时刻</p>
+        <h2 class="memories__title">一起做过的事情</h2>
+        <p class="memories__subtitle">每个瞬间都想与你分享</p>
+      </div>
+
+      <div class="memories__grid" id="memoriesGrid"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="memoryModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__content" role="document">
+      <button class="modal__close" id="modalClose" aria-label="关闭">×</button>
+      <img class="modal__image" id="modalImage" src="" alt="回忆照片" />
+      <div class="modal__body">
+        <p class="modal__date" id="modalDate"></p>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__text" id="modalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
