@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>圣诞回忆礼物</title>
+  <title>献给 unicorn 的圣诞回忆</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -23,13 +23,19 @@
 
   <header class="hero" id="hero">
     <div class="hero__content">
-      <!-- 这里可以修改女朋友的称呼和标题文案 -->
-      <p class="hero__eyebrow">为我最爱的宝宝准备</p>
-      <h1 class="hero__title">宝宝圣诞节快乐 🎄</h1>
+      <!-- 这里可以修改女朋友的称呼（默认 unicorn）和标题文案 -->
+      <p class="hero__eyebrow">献给我最爱的 unicorn</p>
+      <h1 class="hero__title">亲爱的 unicorn，圣诞节快乐 🎄</h1>
       <p class="hero__subtitle">
-        这是送给你的小小圣诞礼物，也装着我们最闪亮的回忆。
+        这是送给你的温柔小礼物，也藏着我们闪闪发光的回忆。
         <!-- 修改副标题文字，请直接编辑这一行 -->
       </p>
+
+      <div class="unicorn-decor" aria-hidden="true">
+        <span class="unicorn-decor__icon">🦄</span>
+        <span class="unicorn-decor__trail"></span>
+        <span class="unicorn-decor__sparkle">✶</span>
+      </div>
 
       <button class="gift-box" id="giftBox" aria-label="打开礼物">
         <div class="gift-box__lid"></div>
@@ -43,9 +49,13 @@
   <main>
     <section class="memories" id="memories">
       <div class="memories__header">
-        <p class="memories__eyebrow">我们的闪闪时刻</p>
+        <p class="memories__eyebrow">与 unicorn 的闪闪时刻</p>
         <h2 class="memories__title">一起做过的事情</h2>
         <p class="memories__subtitle">每个瞬间都想与你分享</p>
+        <div class="memories__badge" aria-hidden="true">
+          <span class="memories__badge-icon">🦄</span>
+          <span class="memories__badge-text">独角兽的心动日记</span>
+        </div>
       </div>
 
       <div class="memories__grid" id="memoriesGrid"></div>
